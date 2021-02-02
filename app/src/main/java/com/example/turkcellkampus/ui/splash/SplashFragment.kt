@@ -29,7 +29,7 @@ class SplashFragment : BaseFragment(){
         super.onActivityCreated(savedInstanceState)
 
         mHandler.postDelayed({
-            findNavController().navigate(R.id.action_splashFragment_to_nav_home)
+            findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
         }, 2000)
     }
 

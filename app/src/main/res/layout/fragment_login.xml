@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/turkcelllogo"
+        android:layout_marginTop="100dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/turkcell_text"
+        android:text="Turkcell'le Bağlan Hayata"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verification_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turkcell_text">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+            android:text="Kayıt Ol"
+            android:background="@drawable/app_button_rounded"
+            android:layout_marginTop="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Turkcell Çalışanı Girişi"
+            android:background="@drawable/app_button_rounded"
+            app:layout_constraintStart_toStartOf="@id/button"
+            app:layout_constraintEnd_toEndOf="@id/button"
+            app:layout_constraintTop_toBottomOf = "@id/button"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turkcell_text"
+        android:visibility="invisible">
+
+
+        <EditText
+            android:id="@+id/username_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+            android:hint="Ad, Soyad"
+            android:textSize="24sp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:background="@drawable/app_button_rounded"
+            android:layout_marginTop="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/education_status"
+            android:layout_width="0dp"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:hint="Öğrenim Durumu"
+            android:background="@drawable/app_button_rounded"
+            app:layout_constraintStart_toStartOf="@id/username_surname"
+            app:layout_constraintEnd_toEndOf="@id/username_surname"
+            app:layout_constraintTop_toBottomOf = "@id/username_surname"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="0dp"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:hint="Telefon Numarası"
+            android:background="@drawable/app_button_rounded"
+            app:layout_constraintStart_toStartOf="@id/education_status"
+            app:layout_constraintEnd_toEndOf="@id/education_status"
+            app:layout_constraintTop_toBottomOf = "@id/education_status"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/mailadress"
+            android:layout_width="0dp"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:hint="E-posta"
+            android:background="@drawable/app_button_rounded"
+            app:layout_constraintStart_toStartOf="@id/phone_number"
+            app:layout_constraintEnd_toEndOf="@id/phone_number"
+            app:layout_constraintTop_toBottomOf = "@id/phone_number"
+            android:gravity="center_horizontal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Kayıt ol"
+            app:layout_constraintStart_toStartOf="@id/mailadress"
+            app:layout_constraintEnd_toEndOf="@id/mailadress"
+            app:layout_constraintTop_toBottomOf = "@id/mailadress"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
