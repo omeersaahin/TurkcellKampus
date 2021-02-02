@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.turkcellkampus.ui.home.HomeFragment"
+        android:label="Ana Ekran"
+        tools:layout="@layout/fragment_housing" />
+    <fragment
+        android:id="@+id/nav_housing"
+        android:name="com.example.turkcellkampus.ui.refectory.RefectoryFragment"
+        android:label="Yemekhane"
+        tools:layout="@layout/fragment_refectory" />
+
+    <fragment
+        android:id="@+id/nav_refectory"
+        android:name="com.example.turkcellkampus.ui.housing.HousingFragment"
+        android:label="Konaklama ve Ulaşım"
+        tools:layout="@layout/fragment_housing" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.turkcellkampus.ui.splash.SplashFragment"
+        >
+        <action
+            android:id="@+id/action_splashFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

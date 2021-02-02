@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.turkcellkampus">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bluelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bluelogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TurkcellKampus">
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TurkcellKampus.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
