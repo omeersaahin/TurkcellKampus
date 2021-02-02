@@ -27,6 +27,7 @@ class LoginFragment : BaseFragment() {
         button = view.findViewById(R.id.button)
         login_layout = view.findViewById(R.id.verification_layout)
         signup_layout = view.findViewById(R.id.signup_layout)
+        turkcell_text = view.findViewById(R.id.turkcell_text)
         button?.setOnClickListener {
             login_layout?.visibility = View.INVISIBLE
             turkcell_text?.visibility = View.INVISIBLE
