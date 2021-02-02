@@ -22,4 +22,5 @@
     <style name="Theme.TurkcellKampus.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TurkcellKampus.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

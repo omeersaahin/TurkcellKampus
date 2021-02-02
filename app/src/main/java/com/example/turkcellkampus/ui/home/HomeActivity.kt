@@ -25,7 +25,7 @@ class HomeActivity : BaseActivity() {
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
         appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.nav_home, R.id.nav_housing, R.id.nav_refectory), drawerLayout)
+            R.id.nav_home, R.id.nav_social, R.id.nav_connect, R.id.flowFragment, R.id.profileFragment), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

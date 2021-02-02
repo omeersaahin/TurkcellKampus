@@ -9,12 +9,21 @@
             android:icon="@drawable/baseline_home_24"
             android:title="Ana Ekran" />
         <item
-            android:id="@+id/nav_housing"
-            android:icon="@drawable/baseline_local_dining_24"
-            android:title="YemekHane" />
+            android:id="@+id/nav_social"
+            android:icon="@drawable/baseline_share_black_24"
+            android:title="Sosyal" />
         <item
-            android:id="@+id/nav_refectory"
-            android:icon="@drawable/baseline_bed_24"
-            android:title="Konaklama ve Ulaşım" />
+            android:id="@+id/nav_connect"
+            android:icon="@drawable/baseline_link_black_24"
+            android:title="Bağlan" />
+        <item
+            android:id="@+id/flowFragment"
+            android:icon="@drawable/baseline_assignment_black_24"
+            android:title="Akış" />
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/baseline_account_circle_black_24"
+            android:title="Profil"/>
+
     </group>
 </menu>
